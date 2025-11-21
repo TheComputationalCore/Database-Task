@@ -1,11 +1,7 @@
-# 📘 Database Tasks — SQL, JDBC, and MongoDB Exercises
+# SQL, JDBC & MongoDB Tasks
 
-![License](https://img.shields.io/badge/License-MIT-green.svg)
-![Java](https://img.shields.io/badge/Java-100%25-orange)
-![SQL](https://img.shields.io/badge/SQL-MySQL-blue)
-![MongoDB](https://img.shields.io/badge/MongoDB-Queries-green)
-
-This repository contains completed solutions for **SQL**, **JDBC**, and **MongoDB** tasks.
+A clean, structured collection of database tasks involving **MySQL SQL queries**, **Java JDBC operations**, and **MongoDB queries**.  
+This repository also includes screenshots demonstrating query outputs and program execution.
 
 ---
 
@@ -16,96 +12,131 @@ This repository contains completed solutions for **SQL**, **JDBC**, and **MongoD
 ├── 1.sql
 ├── MyDatabaseConnection.java
 ├── QuestionTwo.java
-├── MONGODB TASK.docx
 ├── screenshots/
-│   ├── Screenshot1.png
-│   ├── Screenshot2.png
-│   └── Screenshot3.png
+│   ├── 1.1.png
+│   ├── 1.2.png
+│   ├── 1.3.png
+│   ├── 1.4.png
+│   ├── 1.5.png
+│   ├── 1.6.png
+│   ├── 1.7.png
+│   ├── 1.8.png
+│   ├── 2.5.png
+│   ├── 2.6.png
 └── README.md
 ```
 
 ---
 
-## 🧩 Task 1 — SQL Queries (Employee Table)
+## 📝 Task 1 — SQL Queries on Employee Table
 
-This task includes SQL operations on the `Empl` table.
+The `Empl` table contains employee information such as:
 
-### 🖼 Screenshot — SQL Task
+- `EName` — Employee Name  
+- `Sal` — Salary  
+- `Comm` — Commission  
+- `Job` — Job Title  
+- `Mgr` — Manager ID  
 
-![SQL Screenshot](screenshots/Screenshot1.png)
+### ✔ Screenshots
 
-### Queries Included
+#### 🔹 Full Table View
+![1.1](screenshots/1.1.png)
 
-- Employees with salary ≥ 2200
-- Employees without commission
-- Employees not in 2500–4000 range
-- Employees without a manager
-- Names with “A” as the third letter
-- Names ending with “S”
+#### 🔹 Employees with salary ≥ 2200
+![1.2](screenshots/1.2.png)
 
----
+#### 🔹 Employees with NULL commission
+![1.3](screenshots/1.3.png)
 
-## 🧩 Task 2 — JDBC Employee Data Insertion
+#### 🔹 Salary NOT between 2500 and 4000
+![1.4](screenshots/1.4.png)
 
-A Java program that:
+#### 🔹 Employees without a manager
+![1.5](screenshots/1.5.png)
 
-- Creates an `employee` table
-- Inserts sample employee records
-- Connects to MySQL using JDBC
-- Logs success messages
+#### 🔹 Employees whose 3rd letter is 'A'
+![1.6](screenshots/1.6.png)
 
-### 🖼 Screenshot — JDBC Program
+#### 🔹 Employees whose name ends with 'T'
+![1.7](screenshots/1.7.png)
 
-![JDBC Screenshot](screenshots/Screenshot2.png)
-
----
-
-## 🧩 Task 3 — MongoDB Product Dataset Queries
-
-Queries such as:
-
-- Retrieve all products
-- Price-based filters
-- Material and color search
-- Deleting items
-- Field projection
-
-### 🖼 Screenshot — MongoDB Output
-
-![MongoDB Screenshot](screenshots/Screenshot3.png)
+#### 🔹 SQL Script Summary
+![1.8](screenshots/1.8.png)
 
 ---
 
-## 🛠 How to Run
+## 🧪 Task 2 — JDBC Employee Insert Program
 
-### ▶ SQL
+Java program using JDBC to:
 
-Open `1.sql` in MySQL Workbench and execute.
+- Connect to MySQL  
+- Create `employee` table  
+- Insert 5 employee records  
 
-### ▶ JDBC
+### ✔ Successful Connection Screenshot
+![2.5](screenshots/2.5.png)
 
+### ✔ Inserted Records Verification
+![2.6](screenshots/2.6.png)
+
+---
+
+## 🍃 Task 3 — MongoDB Queries (Product Dataset)
+
+Queries performed:
+
+1. Retrieve all products  
+2. Find products priced between 400 and 800  
+3. Find products NOT priced between 400 and 600  
+4. First 4 products with price > 500  
+5. Retrieve product_name & product_material  
+6. Find product with `row_id = 10`  
+7. Delete products priced at 28  
+8. And more…  
+
+---
+
+## ▶ How to Run
+
+### **SQL**
 ```bash
+mysql -u root -p
+source 1.sql;
+```
+
+### **JDBC**
+```bash
+javac MyDatabaseConnection.java
 javac QuestionTwo.java
 java QuestionTwo
 ```
 
-### ▶ MongoDB
-
+### **MongoDB**
 ```bash
 mongoimport --db mydatabase --collection products --file product.json --jsonArray
 ```
 
 ---
 
-## 📦 Requirements
+## ✔ Requirements
 
-- MySQL / MariaDB
-- JDK 8+
-- MongoDB
-- MySQL Connector/J
+- MySQL 5.7+ / MariaDB  
+- Java 8+  
+- MySQL Connector/J  
+- MongoDB 4.0+  
 
 ---
 
-## 📜 License
+## 📸 Screenshots Folder
 
-Licensed under the **MIT License**.
+All images included are sanitized and safe for public usage.  
+Sensitive screenshots (`2.1`–`2.4`) were removed.
+
+---
+
+## 📌 Author
+**TheComputationalCore**
+
+---
+
