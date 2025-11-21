@@ -5,74 +5,62 @@
 ![Prettier Format](https://github.com/TheComputationalCore/sql-jdbc-mongodb-tasks/actions/workflows/prettier-format.yml/badge.svg)
 ![License](https://img.shields.io/badge/License-MIT-green.svg)
 
-A structured repository with SQL queries, JDBC operations, and
-MongoDB tasks. This project uses MySQL, Java, and MongoDB.
+A structured repository containing SQL queries, JDBC operations,
+and MongoDB tasks. The project demonstrates backend fundamentals
+using MySQL, Java, and MongoDB.
 
 ## Project Structure
 
 ```
 sql-jdbc-mongodb-tasks/
-│── .github/workflows/
-│── screenshots/
-│── 1.sql
-│── MyDatabaseConnection.java
-│── QuestionTwo.java
-│── MONGODB TASK.docx
-│── README.md
-│── LICENSE
+├── .github/workflows/
+├── screenshots/
+├── 1.sql
+├── MyDatabaseConnection.java
+├── QuestionTwo.java
+├── MONGODB TASK.docx
+├── README.md
+└── LICENSE
 ```
 
-## Task 1 — SQL Queries (MySQL)
+## Task 1 – SQL Queries
+
+These SQL queries run on the `Empl` table.
 
 ### Screenshots
 
-#### Full Table Output
-
 ![Full Table](screenshots/1.1.png)
-
-#### Salary ≥ 2200
 
 ![Salary ≥ 2200](screenshots/1.2.png)
 
-#### Employees With NULL Commission
+![NULL Commission](screenshots/1.3.png)
 
-![NULL commission](screenshots/1.3.png)
+![Not Between 2500 and 4000](screenshots/1.4.png)
 
-#### Salary Not Between 2500 and 4000
+![No Manager](screenshots/1.5.png)
 
-![Not between](screenshots/1.4.png)
+![Third Letter A](screenshots/1.6.png)
 
-#### No Manager
-
-![No manager](screenshots/1.5.png)
-
-#### Name With 'A' as 3rd Letter
-
-![Third letter A](screenshots/1.6.png)
-
-#### Name Ending With 'T'
-
-![Ends with T](screenshots/1.7.png)
-
-#### Final SQL Script
+![Ends With T](screenshots/1.7.png)
 
 ![SQL Script](screenshots/1.8.png)
 
-## Task 2 — JDBC Program
+## Task 2 – JDBC (Java)
 
-### Connection Class
+### Database Connection
 
 ![JDBC Connection](screenshots/2.5.png)
 
 ### Output
 
-![Output](screenshots/2.6.png)
+![Connection Created](screenshots/2.6.png)
 
-## Task 3 — MongoDB Queries
+## Task 3 – MongoDB Queries
 
-Queries are included in `MONGODB TASK.docx`.
+Queries performed on a product dataset.  
+See `MONGODB TASK.docx`.
 
-## How to Run
+## Run Instructions
 
 ### SQL
 
@@ -93,9 +81,9 @@ java QuestionTwo
 ### MongoDB
 
 ```bash
-mongoimport --db mydatabase --collection products --file product.json --jsonArray
+mongoimport --db mydatabase   --collection products   --file product.json   --jsonArray
 ```
 
 ## License
 
-MIT License.
+MIT License
