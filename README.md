@@ -72,6 +72,7 @@ This task involves writing MongoDB queries on a product dataset provided in JSON
    - Ensure the `Empl` table exists in your database.
    - Configure your JDBC driver (e.g., MySQL Connector/J).
 2. **Compile and Run**:
+
    ```bash
    javac Task2.java
    java Task2
