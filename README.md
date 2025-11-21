@@ -12,9 +12,11 @@ This repository contains solutions for database-related tasks involving SQL and 
 ## Task Descriptions
 
 ### Task 1: SQL Queries on Employee Table
+
 This task involves creating a table `Empl` to store employee details and writing SQL queries to retrieve specific information.
 
 #### Table Structure
+
 - **Empl**:
   - `EName`: Employee name
   - `Sal`: Salary
@@ -24,6 +26,7 @@ This task involves creating a table `Empl` to store employee details and writing
   - Other fields as per standard employee details
 
 #### Queries
+
 1. Display `EName` and `Sal` of employees with a salary greater than or equal to 2200.
 2. Display details of employees who are not receiving a commission.
 3. Display `EName` and `Sal` of employees whose salary is not in the range of 2500 to 4000.
@@ -32,12 +35,15 @@ This task involves creating a table `Empl` to store employee details and writing
 6. Display `EName` of employees whose name ends with "S".
 
 ### Task 2: JDBC Program for Employee Data Insertion
+
 This task involves writing a Java program using JDBC to connect to a database and insert employee data into the `Empl` table.
 
 ### MongoDB Day 1: Queries on Product Dataset
+
 This task involves writing MongoDB queries on a product dataset provided in JSON format ([product.json](https://github.com/rvsp/database/blob/master/mongodb/product.json)).
 
 #### Queries
+
 1. Retrieve all information about each product.
 2. Find products with a price between 400 and 800.
 3. Find products with a price not between 400 and 600.
@@ -52,6 +58,7 @@ This task involves writing MongoDB queries on a product dataset provided in JSON
 ## How to Run
 
 ### SQL Queries (Task 1)
+
 1. **Set Up the Database**:
    - Create a database (e.g., using MySQL).
    - Create the `Empl` table with the appropriate columns.
@@ -60,6 +67,7 @@ This task involves writing MongoDB queries on a product dataset provided in JSON
    - Execute the queries to view the results.
 
 ### JDBC Program (Task 2)
+
 1. **Set Up the Database**:
    - Ensure the `Empl` table exists in your database.
    - Configure your JDBC driver (e.g., MySQL Connector/J).
@@ -68,9 +76,11 @@ This task involves writing MongoDB queries on a product dataset provided in JSON
    javac Task2.java
    java Task2
    ```
+
    - Ensure your database credentials are updated in the code.
 
 ### MongoDB Queries (MongoDB Day 1)
+
 1. **Set Up MongoDB**:
    - Install MongoDB and start the MongoDB server.
    - Import the `product.json` dataset into a MongoDB collection (e.g., `products`).
